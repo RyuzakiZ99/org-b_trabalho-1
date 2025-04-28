@@ -13,3 +13,6 @@ Para adicionar o novo sinal de controle, foi inserido no endereço 0b000001 da m
 
 Para implementar a instrução, foi adicionado o sinal de controle LB à unidade de controle, usado na hora de converter o conteúdo da memória em um byte. Esse sinal também é utilizado na hora de selecionar a operação da ALU, para calcular o endereço efetivo da memória. No estágio de MEM/WB, o valor do byte retornado da memória passa por signal extension, ficando com 32 bits antes de ser escrito no registrador de destino.
 A instrução possui opcode 0b100000 e esse endereço na memória de instruções terá como saída o valor 0b1 0000 0010 1011, que corresponde, respectivamente, aos sinais de controle ativos de LB, ALU_SRC, MEM_READ, MEM_TO_REG e REG_WRITE.
+
+# DIV: 
+Segue mesma lógica implementada em Monociclo.
